@@ -17,6 +17,12 @@ mysqlbackup.pl BACKUPDIR
 
 # Version History
 
+***Version .07-beta changes***
+
+* Fixed bad logic in the utility file path code.
+* Added a set of common path locations to the search path.
+* Removed information_schema from databases backed up.
+
 ***Version .06-beta changes***
 
 * Modified sql connect string to no longer specify an initial database.
