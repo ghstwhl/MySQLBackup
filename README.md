@@ -17,6 +17,10 @@ mysqlbackup.pl BACKUPDIR
 
 # Version History
 
+***Version .08-beta changes***
+
+* Utilizes [client] section of ~/.my.cnf if present.
+
 ***Version .07-beta changes***
 
 * Fixed bad logic in the utility file path code.
