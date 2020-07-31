@@ -16,7 +16,8 @@ mysqlbackup.pl BACKUPDIR
 ~~~
 
 **Example:**
-See backup.sh as an example wrapper that can be called from a cron job and checks to make sure there isn't a backup in progress before it runs.
+
+See `backup.sh` as an example wrapper that can be called from a cron job and checks to make sure there isn't a backup in progress before it runs.
 
 # Version History
 
