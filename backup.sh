@@ -20,6 +20,6 @@ fi
 # lockfile checks complete, run the backup
 echo "$$" > "${LOCKFILE}"
 mkdir -p /var/local/backups/mysql/
-/opt/bin/MySQLBackup.pl /var/local/backups/mysql/
+/opt/bin/MySQLBackup.py /var/local/backups/mysql/
 find /var/local/backups/mysql/ -type f -mtime +14 -delete
 rm "${LOCKFILE}"

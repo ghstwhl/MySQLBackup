@@ -12,7 +12,7 @@ For information on how to create a my.cnf file visit this page: [http://dev.mysq
 **Usage:**
 
 ~~~
-mysqlbackup.pl BACKUPDIR
+python3 MySQLBackup.py BACKUPDIR
 ~~~
 
 **Example:**
@@ -20,6 +20,13 @@ mysqlbackup.pl BACKUPDIR
 See `backup.sh` as an example wrapper that can be called from a cron job and checks to make sure there isn't a backup in progress before it runs.
 
 # Version History
+
+***Version 1.0 changes***
+
+* Rewritten in Python 3.
+* Uses the `mysql` and `mysqldump` CLI clients directly; no external Python packages required.
+* Supports `[client]` section of `~/.my.cnf` in addition to `[mysqldump]`.
+* Augments PATH with common utility locations to find `mysql`, `mysqldump`, and `gzip`.
 
 ***Version .08-beta changes***
 
